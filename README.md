@@ -1,3 +1,4 @@
 # EvArkadasiProjesi
 
-Apk dosyamız apk
+Apk dosyamız "apk/debug" konumunda yer almaktadır.
+Teşekkürler.
