@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "816253421565",
+    "project_id": "evarkadasiprojesi",
+    "storage_bucket": "evarkadasiprojesi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816253421565:android:97652d477c43d3b7647b94",
+        "android_client_info": {
+          "package_name": "com.nuddein.evarkadasiprojesi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816253421565-nbjs2kqgoea2bit8s9mdo4nbhg9nts27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzEuCx0moW8dulPywp9BjhXI2riOjgSqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816253421565-nbjs2kqgoea2bit8s9mdo4nbhg9nts27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

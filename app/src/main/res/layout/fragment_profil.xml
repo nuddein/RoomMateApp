@@ -1,0 +1,330 @@
+ <RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cerceve.ProfilFragment">
+
+   <com.google.android.material.appbar.AppBarLayout
+       android:id="@+id/bar_profilCerceve"
+       android:background="?android:attr/windowBackground"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       
+       <androidx.appcompat.widget.Toolbar
+           android:id="@+id/toolbar_profilCerceve"
+           android:background="?android:attr/windowBackground"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           
+           
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+               <TextView
+                   android:id="@+id/txt_kullaniciadi_profilcerceve"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="kullanıcı adı"
+                   android:textSize="18sp"
+                   android:maxLines="1"
+                   android:textStyle="bold"/>
+
+
+            <ImageView
+                android:id="@+id/resimLogout_profilCercevesi"
+                android:src="@drawable/ic_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"/>
+
+
+
+           </RelativeLayout>
+           
+       </androidx.appcompat.widget.Toolbar>
+
+   </com.google.android.material.appbar.AppBarLayout>
+
+
+     <ScrollView
+         android:layout_below="@+id/bar_profilCerceve"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         
+         
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+
+             <LinearLayout
+                 android:id="@+id/ust_bar"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="16dp">
+
+
+                 <ImageView
+                     android:id="@+id/profil_resmi_profilCercevesi"
+                     android:src="@mipmap/ic_launcher"
+                     android:layout_width="80dp"
+                     android:layout_height="80dp"/>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="80dp"
+                     android:paddingRight="4dp"
+                     android:paddingLeft="20dp"
+                     android:orientation="vertical">
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal"
+                         android:gravity="center">
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:orientation="vertical">
+
+
+                         </LinearLayout>
+
+
+
+
+
+
+                         <LinearLayout
+                             android:layout_marginLeft="15dp"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:orientation="vertical">
+
+
+
+
+
+                         </LinearLayout>
+
+
+
+
+
+
+                         <LinearLayout
+                             android:layout_marginLeft="15dp"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:orientation="vertical">
+
+
+
+
+
+
+                         </LinearLayout>
+
+
+                     </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="10dp"
+                         android:orientation="horizontal">
+
+                     <Button
+                         android:id="@+id/btn_talepGonder_profilCercevesi"
+                         android:layout_width="120dp"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="5dp"
+                         android:layout_marginRight="10dp"
+                         android:text="Talep Gönder"
+                         android:textColor="@color/white"
+                         android:textSize="17dp" />
+
+                         <Button
+                             android:id="@+id/btn_profilDuzenle_profilCercevesi"
+                             android:layout_width="120dp"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="5dp"
+                             android:text="Profil Duzenle"
+                             android:textColor="@color/white"
+                             android:textSize="17dp" />
+
+
+
+                     </LinearLayout>
+
+
+
+                 </LinearLayout>
+
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/orta_bar"
+                 android:padding="12dp"
+                 android:orientation="vertical"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 
+                 <TextView
+                     android:id="@+id/txt_ad_profilCercevesi"
+                     android:maxLines="1"
+                     android:textStyle="bold"
+                     android:textSize="16sp"
+                     android:text="Bölüm/Sınıf"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+                 <TextView
+                     android:id="@+id/txt_telNo_profilCercevesi"
+                     android:text="Telefon Numarası: "
+                     android:maxLines="1"
+                     android:layout_marginTop="5dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+                 <TextView
+                     android:id="@+id/txt_mail_profilCercevesi"
+                     android:text="Mail Adresi: "
+                     android:maxLines="1"
+                     android:layout_marginTop="5dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+                 <TextView
+                     android:id="@+id/text_mesafe_profilCercevesi"
+                     android:hint="kampuse olan/istenen mesafe: "
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+                 <TextView
+                     android:id="@+id/text_sure_profilCercevesi"
+                     android:hint="evde kalacağı/paylaşacığı süre: "
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 <TextView
+                     android:id="@+id/txt_egitimBilgisi_profilCercevesi"
+                     android:text="Durum: "
+                     android:maxLines="1"
+                     android:layout_marginTop="5dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:orientation="horizontal">
+
+
+                     <CheckBox
+                         android:id="@+id/checkbox_lisans_profilFragment"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Ev/Oda Arkadaşı Arıyor" />
+
+                     <CheckBox
+                         android:id="@+id/checkbox_yuksek_lisans_profilFragment"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Ev/Oda Arıyor" />
+
+
+                 </LinearLayout>
+                 <CheckBox
+                     android:id="@+id/checkbox_doktora_profilFragment"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Aramıyor" />
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                     android:orientation="horizontal">
+
+                     <ImageView
+                         android:id="@+id/whatsapp_icon"
+                         android:layout_width="50dp"
+                         android:layout_height="50dp"
+                         android:src="@drawable/whatsapp"
+                         android:layout_marginRight="30dp"/>
+
+
+                 <ImageView
+                     android:id="@+id/gmail_icon"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:src="@drawable/gmail" />
+
+
+
+                 </LinearLayout>
+
+
+
+                 
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/son_bar"
+
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="-5dp"
+                 android:layout_marginRight="-5dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+
+
+             </LinearLayout>
+             
+
+
+
+
+         </LinearLayout>
+
+
+     </ScrollView>
+
+
+</RelativeLayout>
